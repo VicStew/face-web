@@ -8,7 +8,7 @@ This webpage serves as a group project showcasing the collaborative work of team
 - Natasha Wamuyu  
 - Victor Stewart
 - Faith Sang
-- Paul Chiromo
+- Paul Owiti
 - John Ndirangu
 
 ## Environment Setup
