@@ -1,0 +1,119 @@
+:root {
+  --bg: #0f172a;
+  --card: #1e293b;
+  --accent: #38bdf8;
+  --success: #22c55e;
+  --warning: #facc15;
+  --error: #ef4444;
+  --text: #e5e7eb;
+  --muted: #94a3b8;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: radial-gradient(circle at top, #1e293b, #020617);
+  color: var(--text);
+}
+
+header {
+  padding: 2.5rem;
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2.4rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  color: var(--muted);
+  max-width: 720px;
+  margin: auto;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card {
+  background: linear-gradient(180deg, #1e293b, #020617);
+  border-radius: 16px;
+  padding: 2rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+.screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.face-box {
+  width: 180px;
+  height: 220px;
+  border-radius: 16px;
+  background: #020617;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--muted);
+  border: 2px dashed #334155;
+}
+
+.status {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.amount {
+  font-size: 2rem;
+  color: var(--accent);
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+button {
+  background: #020617;
+  color: var(--text);
+  border: 1px solid #334155;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  background: #1e293b;
+  border-color: var(--accent);
+}
+
+ul {
+  padding-left: 1.2rem;
+  line-height: 1.7;
+  color: var(--muted);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 900px) {
+  main {
+grid-template-columns: 1fr;
+  }
+}
